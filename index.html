@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Location Infos by Zip Code</title>
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+    
+    <section class="hero is-primary px-6">
+        <div class="hero-body has-text-centered">
+          <h1 class="title">
+            US Location Infos
+          </h1>
+          <p class="subtitle">
+            Enter US zip code to get location info.
+          </p>
+          <input id="input-zip" class="input is-primary is-inline" type="search" placeholder="Primary input">
+          <button id="get-infos" class="button is-white is-inline">Get</button>
+        </div>
+    </section>
+
+    <!-- Location infos will show up here -->
+    <div id="result"></div>
+
+
+    <!-- Error message, if there is any -->
+    <article id="error-msg" class="message is-danger mt-3 none">
+        <div class="message-body">
+          No city found; zip code invalid!!!
+        </div>
+    </article>
+
+    <!-- Javascript Local -->
+    <script src="main.js"></script>
+
+</body>
+
+
+</html>
