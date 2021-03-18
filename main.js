@@ -4,7 +4,6 @@ document.querySelector('#get-infos')
     getPlaces();
 });
 
-
 //Listen to the Keypress on the Input
 document.querySelector('#input-zip')
 .addEventListener('keypress', (event) => {
@@ -12,7 +11,6 @@ document.querySelector('#input-zip')
         getPlaces();        
     }
 });
-
 
 //Delete places
 let deletePlace = document.querySelector('body');
@@ -22,7 +20,6 @@ deletePlace.addEventListener('click', (event) => {
         inputZip.value = '';
     }
 });
-
 
 //Get zip code value from the input
 let inputZip = document.querySelector('#input-zip');
